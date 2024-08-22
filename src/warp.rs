@@ -1,8 +1,8 @@
+use regex::Regex;
 use std::error;
 use std::process::{Command, Stdio};
 use std::thread::sleep;
 use std::time::Duration;
-use regex::Regex;
 
 pub fn get_port() -> Result<u16, Box<dyn error::Error>> {
     let output = Command::new("warp-cli")
