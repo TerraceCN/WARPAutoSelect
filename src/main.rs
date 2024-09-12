@@ -99,7 +99,7 @@ fn main() -> Result<(), Box<dyn error::Error>> {
 
         let connectivity = test_connectivity(warp_port).expect("Failed to test connectivity");
         if connectivity {
-            info!("WARP is unavailable");
+            info!("WARP is available");
             return Ok(());
         } else {
             error!("WARP is unavailable");
